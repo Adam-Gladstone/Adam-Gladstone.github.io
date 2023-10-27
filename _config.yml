@@ -64,6 +64,7 @@ comments:
     category:           "Comments"
     category_id:        "DIC_kwDOKlxGns4CafCJ"
     mapping:            "pathname"
+    strict:             "1"
     reactions_enabled:  "1"
     theme:              "light"
     crossorigin:        "anonymous"
@@ -112,7 +113,7 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-      share: true
+      share: false
       related: true
   # _pages
   - scope:
