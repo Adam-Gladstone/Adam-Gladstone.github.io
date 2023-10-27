@@ -1,10 +1,6 @@
 ---
 title: "History"
-permalink: "/history/"
-tag: Commodore C16
-tag: Atari ST520
-tag: Alcyon C compiler/linker
-tag: Visual C++ v1.0 Professional
+permalink: /history/
 ---
 
 ## A trip down memory lane ...

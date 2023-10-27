@@ -1,6 +1,6 @@
 ---
 title: "Works"
-permalink: "/works/"
+permalink: /works/
 ---
 
 This page lists stuff that I have done, including some open-source projects.

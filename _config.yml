@@ -68,7 +68,6 @@ comments:
     theme:              "light"
     crossorigin:        "anonymous"
 
-
 author:
   name      : "Adam Gladstone"
   avatar    : "/assets/images/bio-photo.png"
@@ -78,6 +77,9 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://adam-gladstone.github.io"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:adam_gladstone@hotmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
