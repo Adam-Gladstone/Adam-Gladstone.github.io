@@ -61,9 +61,9 @@ comments:
   giscus:
     enabled:            true
     repo:               "Adam-Gladstone/Adam-Gladstone.github.io"
-    repo-id:            "R_kgDOKa52-A"
+    repo-id:            "R_kgDOKlxGng"
     category:           "Comments"
-    category_id:        "DIC_kwDOKa52-M4CaWBG"
+    category_id:        "DIC_kwDOKlxGns4CafCJ"
     mapping:            "pathname"
     reactions_enabled:  "1"
     theme:              "light"
