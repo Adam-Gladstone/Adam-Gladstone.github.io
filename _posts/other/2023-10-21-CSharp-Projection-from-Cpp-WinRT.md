@@ -1,8 +1,9 @@
 ---
 title:  "Consume a C++/WinRT component in a C# desktop application"
+layout: single
 excerpt_separator: "<!--more-->"
 categories: 
-  - Blog
+  - Software Interoperability
 tags:
   - cpp 
   - cppwinrt

@@ -1,14 +1,14 @@
 ---
 title:  "Office365 AddIns for R (Part I)"
+layout: single
 excerpt_separator: "<!--more-->"
 categories: 
-  - Blog
+  - R-project 
 tags:
   - R 
   - r-project 
   - Office365 
   - Excel 
-  - Word
 ---
 
 ### Introduction
