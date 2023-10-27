@@ -13,20 +13,19 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: "Adam Gladstone's Blogsite"
+subtitle: "Version 2.0"
+email: adam_gladstone@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Blogging about programming and data analysis.
 twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+github_username: Adam-Gladstone
+minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 search: true
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -57,35 +56,50 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+comments:
+  provider: "giscus"
+  giscus:
+    enabled:            true
+    repo:               "Adam-Gladstone/Adam-Gladstone.github.io"
+    repo-id:            "R_kgDOKa52-A"
+    category:           "Comments"
+    category_id:        "DIC_kwDOKa52-M4CaWBG"
+    mapping:            "pathname"
+    reactions_enabled:  "1"
+    theme:              "light"
+    crossorigin:        "anonymous"
+
+
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name      : "Adam Gladstone"
+  avatar    : "/assets/images/bio-photo.png"
+  bio       : "Blogging about programming and data analysis."
+  location  : "Madrid, Spain"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://adam-gladstone.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/adam-gladstone-b6458b156/"
+    - label: "R"
+      icon: "fab fa-fw fa-r-project"
+      url: "http://www.R-bloggers.com"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/adam-gladstone-b6458b156/"
+    - label: "R"
+      icon: "fab fa-fw fa-r-project"
+      url: "http://www.R-bloggers.com"
 
 defaults:
   # _posts

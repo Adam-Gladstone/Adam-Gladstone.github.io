@@ -1,27 +1,42 @@
-# Minimal Mistakes remote theme starter
+---
+title: "About Me"
+permalink: "/about/"
+layout: page
+---
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+## About me
+![](https://adam-gladstone.github.io/assets/images/bio-photo.png)
 
-Contains basic configuration to get you a site with:
+My name is Adam Gladstone. I am a software developer. I have a background in computer science and more than 20 years' experience developing desktop applications and components within a financial environment. This has involved coding on large-scale, complex software ecosystems. The majority of the development has been in C++, but I also have a good knowledge of C#/.Net and a
+working knowledge of Python and R. I have experience working across the full development lifecycle from design to testing and delivery.
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+## I’m currently working on ...
+- Office365 AddIns
+  
+  *Enabling functionality located in other libraries to be more accessible.*
+  
+- DietMonitorApp
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+  *An Android app that monitors the progress of your diet. Just enter your weight each day and track your weight loss!*
+
+- FIXTools
+ 
+  *A C# code generator that takes (Financial Information eXchange) FIX.xml specifications as input and generates a C++ constexpr FIX header library (that can be used to 'decode' FIX messages).*
+        
+- StatisticsLibrary
+
+  *A C++ library of statistical functions (mean, var, sd, ...), tests (t-test, z-test, F-test ...) and analyses (time series, ... and in the future pca, lda).*
+
+- NaturalLanguageProcessing 
+
+  *A long-standing C# project that tests ideas in natural language parsing. Currently waiting to implement micro-grammars and chains.*
 
 ---
 
-## Troubleshooting
+## I’m currently learning ...
+- Mobile application development with Xamarin.Forms, XAML, .NET MAUI and C# on Windows 11 using Visual Studio 2022.
+- WinRT (C++) for authoring COM-like components that can be consumed by UWP and WinUI applications (I have a couple of projects demonstrating these stacks: MediaCollectionWinUI and StatisticsViewer).
+- CMake
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+---
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
