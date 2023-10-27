@@ -6,8 +6,8 @@ main:
   - title: "Tags"
     url: /tags/
   - title: "About"
-    url: /About/
+    url: /about/
   - title: "Works"
-    url: /Works/  
+    url: /works/  
   - title: "History"
-    url: /History/
+    url: /history/
