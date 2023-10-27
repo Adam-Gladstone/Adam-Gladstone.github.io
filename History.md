@@ -1,7 +1,6 @@
 ---
 title: "History"
 permalink: "/history/"
-layout: page
 tag: Commodore C16
 tag: Atari ST520
 tag: Alcyon C compiler/linker

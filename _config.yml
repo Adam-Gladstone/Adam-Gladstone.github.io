@@ -59,7 +59,6 @@ plugins:
 comments:
   provider: "giscus"
   giscus:
-    enabled:            true
     repo:               "Adam-Gladstone/Adam-Gladstone.github.io"
     repo-id:            "R_kgDOKlxGng"
     category:           "Comments"

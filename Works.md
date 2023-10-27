@@ -1,7 +1,6 @@
 ---
 title: "Works"
 permalink: "/works/"
-layout: page
 ---
 
 This page lists stuff that I have done, including some open-source projects.

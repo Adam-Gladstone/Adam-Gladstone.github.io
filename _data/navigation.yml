@@ -5,9 +5,9 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "About me"
-    url: README.md
+  - title: "About"
+    url: /About/
   - title: "Works"
-    url: Works.md  
+    url: /Works/  
   - title: "History"
-    url: History.md
+    url: /History/
