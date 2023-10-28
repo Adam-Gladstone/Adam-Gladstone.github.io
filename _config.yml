@@ -56,20 +56,6 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-comments:
-  provider: "giscus"
-  giscus:
-    enabled:            true
-    repo:               "Adam-Gladstone/Adam-Gladstone.github.io"
-    repo-id:            "R_kgDOKlxGng"
-    category:           "Comments"
-    category_id:        "DIC_kwDOKlxGns4CafCJ"
-    mapping:            "pathname"
-    strict:             "1"
-    reactions_enabled:  "1"
-    theme:              "light"
-    crossorigin:        "anonymous"
-
 author:
   name      : "Adam Gladstone"
   avatar    : "/assets/images/bio-photo.png"
@@ -123,6 +109,21 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+comments:
+  provider: "giscus"
+  giscus:
+    enabled:            true
+    repo:               "Adam-Gladstone/Adam-Gladstone.github.io"
+    repo-id:            "R_kgDOKlxGng"
+    category:           "Comments"
+    category_id:        "DIC_kwDOKlxGns4CafCJ"
+    mapping:            "pathname"
+    strict:             "1"
+    reactions_enabled:  "1"
+    theme:              "light"
+    crossorigin:        "anonymous"
+
 
 category_archive:
   type: liquid
