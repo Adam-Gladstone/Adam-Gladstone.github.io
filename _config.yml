@@ -16,8 +16,7 @@
 title: "Adam Gladstone's Blogsite"
 subtitle: "Version 2.0"
 email: adam_gladstone@hotmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  I enjoy writing software especially when combined with data analysis. I mostly program in C++ and C#, but also some Python and R. 
+description: I enjoy writing software especially when combined with data analysis. I mostly program in C++ and C#, but also some Python and R. 
 twitter_username: username
 github_username: Adam-Gladstone
 minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
@@ -118,7 +117,7 @@ comments:
     repo-id:            "R_kgDOKlxGng"
     category:           "Announcements"
     category_id:        "DIC_kwDOKlxGns4CafCJ"
-    mapping:            "pathname"
+    mapping:            "title"
     strict:             "1"
     reactions_enabled:  "1"
     theme:              "light"
