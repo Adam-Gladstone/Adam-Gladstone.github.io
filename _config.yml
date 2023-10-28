@@ -116,7 +116,7 @@ comments:
     enabled:            true
     repo:               "Adam-Gladstone/Adam-Gladstone.github.io"
     repo-id:            "R_kgDOKlxGng"
-    category:           "Comments"
+    category:           "Announcements"
     category_id:        "DIC_kwDOKlxGns4CafCJ"
     mapping:            "pathname"
     strict:             "1"
