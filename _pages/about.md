@@ -4,9 +4,7 @@ title: "About"
 ---
 
 ## About me
-![](https://adam-gladstone.github.io/assets/images/bio-photo.png)
-
-My name is Adam Gladstone. I am a software developer. I have a background in computer science and more than 20 years' experience developing desktop applications and components within a financial environment. This has involved coding on large-scale, complex software ecosystems. The majority of the development has been in C++, but I also have a good knowledge of C#/.Net and a
+My name is Adam Gladstone. I am a software developer. I have a background in computer science and more than 20 years' experience developing desktop applications and components within a financial environment. This has involved coding on large-scale, complex software ecosystems. The majority of the development has been in C++, but I also have a good knowledge of C#, .Net and a
 working knowledge of Python and R. I have experience working across the full development lifecycle from design to testing and delivery.
 
 ## I’m currently working on ...
@@ -35,4 +33,3 @@ working knowledge of Python and R. I have experience working across the full dev
 ## I’m currently learning ...
 - Mobile application development with Xamarin.Forms, XAML, .NET MAUI and C# on Windows 11 using Visual Studio 2022.
 - WinRT (C++) for authoring COM-like components that can be consumed by UWP and WinUI applications (I have a couple of projects demonstrating these stacks: MediaCollectionWinUI and StatisticsViewer).
-- CMake

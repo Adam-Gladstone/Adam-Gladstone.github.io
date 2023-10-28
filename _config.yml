@@ -17,10 +17,10 @@ title: "Adam Gladstone's Blogsite"
 subtitle: "Version 2.0"
 email: adam_gladstone@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Blogging about programming and data analysis.
+  I enjoy writing software especially when combined with data analysis. I mostly program in C++ and C#, but also some Python and R. 
 twitter_username: username
 github_username: Adam-Gladstone
-minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 search: true
 
 # Build settings
@@ -72,7 +72,7 @@ comments:
 author:
   name      : "Adam Gladstone"
   avatar    : "/assets/images/bio-photo.png"
-  bio       : "Blogging about programming and data analysis."
+  bio       : "I enjoy writing software especially when combined with data analysis. I mostly program in C++ and C#, but also some Python and R."
   location  : "Madrid, Spain"
   links:
     - label: "Website"
@@ -87,7 +87,7 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/adam-gladstone-b6458b156/"
-    - label: "R"
+    - label: "R-bloggers"
       icon: "fab fa-fw fa-r-project"
       url: "http://www.R-bloggers.com"
 
@@ -99,7 +99,7 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/adam-gladstone-b6458b156/"
-    - label: "R"
+    - label: "R-bloggers"
       icon: "fab fa-fw fa-r-project"
       url: "http://www.R-bloggers.com"
 
