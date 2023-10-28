@@ -60,9 +60,9 @@ comments:
   provider: "giscus"
   giscus:
     repo:               "Adam-Gladstone/Adam-Gladstone.github.io"
-    repo-id:            "R_kgDOKlxGng"
+    repo-id:            "R_kgDOKa52-A"
     category:           "Comments"
-    category_id:        "DIC_kwDOKlxGns4CafCJ"
+    category_id:        "DIC_kwDOKa52-M4CaWBG"
     mapping:            "pathname"
     strict:             "1"
     reactions_enabled:  "1"
