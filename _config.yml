@@ -21,6 +21,7 @@ twitter_username: username
 github_username: Adam-Gladstone
 minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 search: true
+repository: "Adam-Gladstone/Adam-Gladstone.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 
 # Build settings
 markdown: kramdown
@@ -110,18 +111,11 @@ defaults:
       author_profile: true
 
 comments:
-  provider: "giscus"
-  giscus:
-    enabled:            true
-    repo:               "Adam-Gladstone/Adam-Gladstone.github.io"
-    repo-id:            "R_kgDOKlxGng"
-    category:           "Announcements"
-    category_id:        "DIC_kwDOKlxGns4CafCJ"
-    mapping:            "title"
-    strict:             "1"
-    reactions_enabled:  "1"
-    theme:              "light"
-    crossorigin:        "anonymous"
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
+    label: "comment" # Optional - must be existing label.
 
 
 category_archive:
