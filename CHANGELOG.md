@@ -1,8 +1,8 @@
 # Issues
-- Investigate why giscus comments are not appearing
+- Investigate why giscus comments are not appearing. Resolved by replacing giscus with utterances.
 
 # Wishlist
-- Add support for Google Analytics
+- Add support for Google Analytics. Unnecessary until there is more traffic.
 
 # Changes
 
@@ -16,3 +16,7 @@
 ## 29-10-2023
 - Removed giscus support. Currently the `comments.html` file does not appear to output the comments section in posts. Tested this by adding a copy of the `single.html` page in the local `_layouts` directory and manually injecting the comments script - this works.
 - Added support for utterances. Install the app, update the `_config.yml` file and it works 'out of the box'. No reactions though.
+
+## 03-11-2023
+- Updated the website title and about.md
+- Added logo

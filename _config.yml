@@ -13,10 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Adam Gladstone's Blogsite"
-subtitle: "Version 2.0"
+title: "Adam's Software Lab"
+subtitle: "Experiments in software"
+logo: "/assets/images/icons8-case-study-48.png"
 email: adam_gladstone@hotmail.com
-description: I enjoy writing software especially when combined with data analysis. I mostly program in C++ and C#, but also some Python and R. 
+description: A collection of personal projects that reflect areas that I am interested in and technologies that I am learning about. 
 twitter_username: username
 github_username: Adam-Gladstone
 minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
