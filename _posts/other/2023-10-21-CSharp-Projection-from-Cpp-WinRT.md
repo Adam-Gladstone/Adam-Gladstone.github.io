@@ -1,6 +1,7 @@
 ---
 title:  "Consume a C++/WinRT component in a C# desktop application"
 layout: single
+excerpt: "I have a function called 'GetDescriptiveStatistics' that takes some data and returns summary statistics. The function is written in C++, and I want to call it and display the results in a Windows desktop application. This post describes how to do this."
 excerpt_separator: "<!--more-->"
 categories: 
   - Software Interoperability
@@ -20,9 +21,6 @@ I have a function called 'GetDescriptiveStatistics' that takes some data and ret
 ![StatisticsViewerWinUI](https://adam-gladstone.github.io/assets/images/StatisticsViewer.png)
 
 If you know how to do this, you can stop reading here and take a beach break. If not, this post describes the steps to take to write a WinRT (Windows Runtime) Component that exposes the 'GetDescriptiveStatistics' functionality, generate a C# projection (interop), and finally consume it in a C# desktop application allowing me to bind the results to a WinUI3.0 ListView. 
-<!--more-->
-
-
 
 ### Why would you want to do this? 
 Based on the __Microsoft Learn__ article [Windows Runtime components with C++/WinRT](https://learn.microsoft.com/en-us/windows/uwp/winrt-components/create-a-windows-runtime-component-in-cppwinrt) there are three main reasons for building a Windows Runtime component in C++/WinRT.

@@ -1,6 +1,7 @@
 ---
 title:  "Office365 AddIns for R (Part I)"
 layout: single
+excerpt: "I'd like to introduce a couple of Office365 add-ins for R that I have been working on recently. I read [R-bloggers](http://www.R-bloggers.com) regularly and I thought these add-ins might be somewhat useful."
 excerpt_separator: "<!--more-->"
 categories: 
   - R-project 
@@ -15,8 +16,6 @@ tags:
 I'd like to introduce a couple of Office365 add-ins for R that I have been working on recently. I read [R-bloggers](http://www.R-bloggers.com) regularly and I thought these add-ins might be somewhat useful. The __ExcelRAddIn__ lets you evaluate R scripts in an Excel worksheet. The __RScriptAddIn__ for Word allows you to run an R script 'inline' from within a Word document. In this post and the following one [Office365 AddIns for R (Part II)](https://adam-gladstone.github.io/Office365AddIns-for-R-part-II/), I will describe using both add-ins, and outline some of the caveats. 
 
 #### ExcelRAddIn
-<!--more-->
-
 In this example we are going to work through a simple linear model. After opening Excel and loading the add-in (ExcelRAddIn-AddIn64.xll), begin a blank worksheet. You should see an R AddIn menu with a Settings button. 
 
 ![ExcelRAddIn Menu](https://adam-gladstone.github.io/assets/images/excel-r-addin-menu.png)

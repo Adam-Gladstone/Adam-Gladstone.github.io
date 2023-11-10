@@ -1,6 +1,7 @@
 ---
 title:  "Office365 AddIns for R (Part II)"
 layout: single
+excerpt: "In the previous post [Office365 AddIns for R (Part I)](https://adam-gladstone.github.io/Office365AddIns-for-R-part-I/), I introduced the __ExcelRAddIn__. In this post I would like to describe the __RScriptAddIn__ for Word."
 excerpt_separator: "<!--more-->"
 categories: 
   - R-project
@@ -11,14 +12,10 @@ tags:
   - Word
 ---
 
-## Office365 AddIns for R
-
 ### Introduction
 In the previous post [Office365 AddIns for R (Part I)](https://adam-gladstone.github.io/Office365AddIns-for-R-part-I/), I introduced the __ExcelRAddIn__. In this post I would like to describe the __RScriptAddIn__ for Word. This allows you to run an R script 'inline' from within a Word document. I read [R-bloggers](http://www.R-bloggers.com) regularly and I thought this add-in might be useful. In this post I will run through a simple demo.
 
 #### RScriptAddIn
-<!--more-->
-
 Imagine a situation where you want to write a document explaining how to use some feature of R, for example the F-test. You open Word and begin writing; you write the equations as usual:
 
 ![F test](https://adam-gladstone.github.io/assets/images/f-test-doc.png)

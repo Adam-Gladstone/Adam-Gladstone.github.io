@@ -20,3 +20,6 @@
 ## 03-11-2023
 - Updated the website title and about.md
 - Added logo
+
+## 10/11/2023
+- Added 'excerpt' tag to YAML front matter.
