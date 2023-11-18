@@ -1,5 +1,7 @@
 ---
 title:  "Office365 AddIns for R (Part II)"
+seo_title: "Evaluate R scripts directly in an Office365 Word document and display the results inline."
+seo_description: "This Office365 AddIn for Word allows you to evaluate an R script in a Word document and present the results inline."
 layout: single
 excerpt: "In the previous post [Office365 AddIns for R (Part I)](https://adam-gladstone.github.io/Office365AddIns-for-R-part-I/), I introduced the __ExcelRAddIn__. In this post I would like to describe the __RScriptAddIn__ for Word."
 excerpt_separator: "<!--more-->"

@@ -23,3 +23,8 @@
 
 ## 10/11/2023
 - Added 'excerpt' tag to YAML front matter.
+
+## 18/11/2023
+- added jekyll-seo-tag to _config.yml
+- added seo_title and seo_description to posts
+- added Google Analytics support

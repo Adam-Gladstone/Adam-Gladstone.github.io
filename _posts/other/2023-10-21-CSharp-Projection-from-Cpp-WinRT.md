@@ -1,5 +1,7 @@
 ---
 title:  "Consume a C++/WinRT component in a C# desktop application"
+seo_title: "Access functionality in a native C++/WinRT component from a C# WinUI3.0 desktop application."
+seo_description: "This post describes the stages required to write a C++/WinRT component and generate the interop (or projection), so that the component can be consumed in a separate C# WinUI3.0 desktop application."
 layout: single
 excerpt: "I have a function called 'GetDescriptiveStatistics' that takes some data and returns summary statistics. The function is written in C++, and I want to call it and display the results in a Windows desktop application. This post describes how to do this."
 excerpt_separator: "<!--more-->"

@@ -1,5 +1,7 @@
 ---
 title:  "Office365 AddIns for R (Part I)"
+seo_title: "Evaluate R scripts directly in an Excel cell using this Office365 AddIn"
+seo_description: "This post describes the ExcelRAddIn. The AddIn allows you to write an R script in an Excel cell, execute the script, and return the results (where appropriate). The AddIn also supports creating data frames, vectors and matrices."
 layout: single
 excerpt: "I'd like to introduce a couple of Office365 add-ins for R that I have been working on recently. I read [R-bloggers](http://www.R-bloggers.com) regularly and I thought these add-ins might be somewhat useful."
 excerpt_separator: "<!--more-->"
