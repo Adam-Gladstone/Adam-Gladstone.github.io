@@ -38,14 +38,14 @@ Starting with the innermost formula and working outwards: `TEXT(TableTransaction
 ### 2. A Lambda Expression
 This is an extension of the previous approach. We can write an expression using `LAMBDA` which takes a single parameter - the short month name - and passes it to the `SUM(CHOOSECOLS(...))` formula and evaluates it. Furthermore, we can give this a name like `AmountOwedLambda(...)` using the Name Manager.
 
-![Name Manager](https://adam-gladstone.github.io/assets/images/NameManager.PNG).
+![Name Manager](https://adam-gladstone.github.io/assets/images/NameManager.PNG)
 
 Now we have a reusable named function, which seems quite neat. However, it is still rather opaque when you view the formula in the Name Manager.
 
 ### 3. A Pivot Table
 In some ways using a pivot table seems the most natural Excel-way to summarise the data. It is very simple to create. Select *Insert > PivotTable > From Table/Range*. For the rows, we select Months and for the Values we sum the 'Withdrawal' column - which we rename to 'Amount Owed'.
 
-![PivotTable](https://adam-gladstone.github.io/assets/images/PivotTable.PNG).
+![PivotTable](https://adam-gladstone.github.io/assets/images/PivotTable.PNG)
 
 That is all there is to it. This is really simple and extends well for other months (and other dates).
 
@@ -59,7 +59,7 @@ The results are more or less the same as with the Pivot Table. Any updates to th
 
 The second approach is to prepare a filtered query. This is somewhat fiddly. First you need a table (or a named range) representing the input parameter. Once this is defined in PowerQuery, put it to one side. Then define the PowerQuery like the basic table but filtered with a hardcoded month. Finally, edit the M language query to use the input parameter in the query instead of the hardcoded month.
 
-![FilteredQuery](https://adam-gladstone.github.io/assets/images/FilteredQuery.PNG).
+![FilteredQuery](https://adam-gladstone.github.io/assets/images/FilteredQuery.PNG)
 
 In the worksheet, we just enter a month and press refresh, and the results are returned. Full details about how this is set up are given in the references section of the worksheet.
 
