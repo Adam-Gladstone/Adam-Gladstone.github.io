@@ -3,7 +3,7 @@ title:  "Office365 AddIns for R (Part II)"
 seo_title: "Evaluate R scripts directly in an Office365 Word document and display the results inline."
 seo_description: "This Office365 AddIn for Word allows you to evaluate an R script in a Word document and present the results inline."
 layout: single
-excerpt: "In the previous post [Office365 AddIns for R (Part I)](https://adam-gladstone.github.io/Office365AddIns-for-R-part-I/), I introduced the __ExcelRAddIn__. In this post I would like to describe the __RScriptAddIn__ for Word."
+excerpt: "In the previous post [Office365 AddIns for R (Part I)](https://adam-gladstone.github.io/r-project/Office365AddIns-for-R-part-I/), I introduced the __ExcelRAddIn__. In this post I would like to describe the __RScriptAddIn__ for Word."
 excerpt_separator: "<!--more-->"
 categories: 
   - R-project
@@ -15,7 +15,7 @@ tags:
 ---
 
 ### Introduction
-In the previous post [Office365 AddIns for R (Part I)](https://adam-gladstone.github.io/Office365AddIns-for-R-part-I/), I introduced the __ExcelRAddIn__. In this post I would like to describe the __RScriptAddIn__ for Word. This allows you to run an R script 'inline' from within a Word document. I read [R-bloggers](http://www.R-bloggers.com) regularly and I thought this add-in might be useful. In this post I will run through a simple demo.
+In the previous post [Office365 AddIns for R (Part I)](https://adam-gladstone.github.io/r-project/Office365AddIns-for-R-part-I/), I introduced the __ExcelRAddIn__. In this post I would like to describe the __RScriptAddIn__ for Word. This allows you to run an R script 'inline' from within a Word document. I read [R-bloggers](http://www.R-bloggers.com) regularly and I thought this add-in might be useful. In this post I will run through a simple demo.
 
 #### RScriptAddIn
 Imagine a situation where you want to write a document explaining how to use some feature of R, for example the F-test. You open Word and begin writing; you write the equations as usual:
