@@ -3,7 +3,7 @@ title:  "Office365 AddIns for R (Part III)"
 seo_title: "The latest updates and enhancements to the ExcelRAddIn for Office365"
 seo_description: "This post describes the latest updates and enhancements to the ExcelRAddIn. "
 layout: single
-excerpt: "A while back, I introduced the __ExcelRAddIn__ ([Office365 AddIns for R (Part I)](https://adam-gladstone.github.io/Office365AddIns-for-R-part-I/)). This is an Office365 AddIn that allows you to evaluate an R-script from within Excel and use the results. This blog-post describes some of the recent updates to the ExcelRAddIn. "
+excerpt: "A while back, I introduced the __ExcelRAddIn__ ([Office365 AddIns for R (Part I)](https://adam-gladstone.github.io/r-project/Office365AddIns-for-R-part-I/)). This is an Office365 AddIn that allows you to evaluate an R-script from within Excel and use the results. This blog-post describes some of the recent updates to the ExcelRAddIn. "
 excerpt_separator: "<!--more-->"
 categories: 
   - R-project 
@@ -15,7 +15,7 @@ tags:
 ---
 
 ### Introduction
-A while back, I introduced the __ExcelRAddIn__ ([Office365 AddIns for R (Part I)](https://adam-gladstone.github.io/Office365AddIns-for-R-part-I/)). This is an Office365 AddIn that allows you to evaluate an R-script from within Excel and use the results. This blog-post describes some of the recent updates to the ExcelRAddIn. I focus on two specific areas. Firstly, I describe some ease of use features. Then I describe the function wrappers.
+A while back, I introduced the __ExcelRAddIn__ ([Office365 AddIns for R (Part I)](https://adam-gladstone.github.io/r-project/Office365AddIns-for-R-part-I/)). This is an Office365 AddIn that allows you to evaluate an R-script from within Excel and use the results. This blog-post describes some of the recent updates to the ExcelRAddIn. I focus on two specific areas. Firstly, I describe some ease of use features. Then I describe the function wrappers.
 
 #### Ease of use features.
 * As a convenience, users can now specify packages to load when the add-in is initialised. This is available from the Settings button on the R Tools AddIn ribbon.
