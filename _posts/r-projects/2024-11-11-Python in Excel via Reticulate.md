@@ -3,7 +3,7 @@ title:  "Python in Excel via Reticulate"
 seo_title: "Calling a Python script from Excel using the R package Reticulate"
 seo_description: "This post describes a particular use-case for Python in Excel and how it was solved using the R package Reticulate (version 1.39.0). "
 layout: single
-excerpt: "This post describes a particular use-case for Python in Excel and how it was solved using the R package Reticulate 1.39.0 (https://cran.r-project.org/web/packages/reticulate/index.html) along with the ExcelRAddIn (https://github.com/Adam-Gladstone/Office365AddIns).
+excerpt: "This post describes a particular use-case for Python in Excel and how it was solved using the R package [Reticulate 1.39.0](https://cran.r-project.org/web/packages/reticulate/index.html) along with the [ExcelRAddIn](https://github.com/Adam-Gladstone/Office365AddIns).
 
 A while back I read an interesting post on LinkedIn that identified a number of criteria that might be useful when selecting stocks for a portfolio.. "
 excerpt_separator: "<!--more-->"
@@ -17,7 +17,7 @@ tags:
 ---
 
 ### Introduction
-This post describes a particular use-case for Python in Excel and how it was solved using the R package Reticulate 1.39.0 (https://cran.r-project.org/web/packages/reticulate/index.html) along with the ExcelRAddIn (https://github.com/Adam-Gladstone/Office365AddIns).
+This post describes a particular use-case for Python in Excel and how it was solved using the R package [Reticulate 1.39.0](https://cran.r-project.org/web/packages/reticulate/index.html) along with the [ExcelRAddIn](https://github.com/Adam-Gladstone/Office365AddIns).
 
 A while back I read an interesting post on LinkedIn that identified a number of criteria that might be useful when selecting stocks for a portfolio. The specific criteria are: 
 - Trailing PE < 25
@@ -26,7 +26,7 @@ A while back I read an interesting post on LinkedIn that identified a number of 
 - PEG Ratio < 1.2
 - Market Cap < $5bn
 
-The criteria were suggested from an article about Peter Lynch (https://www.linkedin.com/pulse/title-timeless-wisdom-peter-lynch-invest-what-you-know-pushkar-raj-c5zlc/).
+The criteria were suggested from an article about [Peter Lynch](https://www.linkedin.com/pulse/title-timeless-wisdom-peter-lynch-invest-what-you-know-pushkar-raj-c5zlc/).
 
 So I thought it would be a nice idea to get these indicators for a small portfolio of tech giant stocks and display the results in Excel using conditional formatting to determine if the stock selection is consistent with the desired criteria. The end result for this portfolio looks as follows: 
 
@@ -99,8 +99,8 @@ This is where the R package Reticulate came to the rescue. It provides functiona
 #### Using Reticulate in Excel
 Using Reticulate in Excel via the ExcelRAddIn was simple and consists of the following steps.
 
-1. load the reticulate library and
-2. tell reticulate where to find the Python version. The second parameter determines whether the requested copy of Python is required or not. 
+1. Load the reticulate library.
+2. Tell reticulate where to find the Python version. The second parameter determines whether the requested copy of Python is required or not. 
 
 ![Loading Reticulate](https://adam-gladstone.github.io/assets/images/startup-reticulate.PNG)
 
@@ -108,13 +108,13 @@ If we are doing this routinely, it is useful to add Reticulate to the libraries 
 
 ![Reticulate environment](https://adam-gladstone.github.io/assets/images/env-reticulate.PNG)
 
-3. load the Python script, and check it compiles ok. For this we just evaluate the following R script in Excel: `source_python("D:/Development/Projects/Python/FinancialData/equity_financials_alt.py")`
+3. Load the Python script, and check it compiles ok. For this we just evaluate the following R script in Excel: `source_python("D:/Development/Projects/Python/FinancialData/equity_financials_alt.py")`
 
 4. Create an R vector of tickers for the indicators that we want.
 
 ![Create R vector](https://adam-gladstone.github.io/assets/images/tickers-vector.PNG)
 
-5. Finally call the 'get_all_indicators' function, passing it the vectors of tickers. 
+5. Finally call the 'get_all_indicators' function, passing it the vector of tickers. 
 
 ![Retrieve the indicators](https://adam-gladstone.github.io/assets/images/all-indicators.PNG)
 
@@ -123,7 +123,7 @@ The result is a data frame with the values we want. We can then apply the condit
 ### Wrap-up
 This post has described how to use the R package Reticulate to execute a Python script from Excel and retrieve the results. The Excel workbook can be downloaded from here:
 
-[Call Python from R in Excel.xlsx](https://adam-gladstone.github.io/assets/images/Call Python from R in Excel.xlsx).
+[Call Python from R in Excel.xlsx](https://adam-gladstone.github.io/assets/images/Call-Python-from-R-in-Excel.xlsx).
 
 The Python script can be downloaded from here: 
 [equity_financials_alt.py](https://adam-gladstone.github.io/assets/images/equity_financials_alt.py). 
@@ -131,4 +131,4 @@ The Python script can be downloaded from here:
 This use-case is quite particular (obtaining specific financial data from __yfinance__). However, the approach is more widely useful. On the other hand, there are a number of alternative approaches (web-scraping, using different finance libraries, and even using Python in Excel) that may be more appropriate. 
 
 
-[^1]: I think it should have been possible to use Excel's Python function (https://support.microsoft.com/en-us/office/get-started-with-python-in-excel-a33fbcbe-065b-41d3-82cf-23d05397f53d). But it turns out that importing __yfinance__ produces a 'module not found' error. According to the documentation __yfinance__ is not one of the open source libraries that the Excel Python secure distribution supports (https://support.microsoft.com/en-us/office/open-source-libraries-and-python-in-excel-c817c897-41db-40a1-b9f3-d5ffe6d1bf3e).
+[^1]: I think it should have been possible to use Excel's Python function [PY=](https://support.microsoft.com/en-us/office/get-started-with-python-in-excel-a33fbcbe-065b-41d3-82cf-23d05397f53d). But it turns out that importing __yfinance__ produces a 'module not found' error. According to the documentation __yfinance__ is not one of the open source libraries that the Excel Python secure distribution [supports](https://support.microsoft.com/en-us/office/open-source-libraries-and-python-in-excel-c817c897-41db-40a1-b9f3-d5ffe6d1bf3e).
