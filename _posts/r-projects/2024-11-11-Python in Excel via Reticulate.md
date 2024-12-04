@@ -98,6 +98,7 @@ This is where the R package Reticulate came to the rescue. It provides functiona
 Using Reticulate in Excel via the ExcelRAddIn was simple and consists of the following steps.
 
 A. Load the reticulate library.
+
 B. Tell reticulate where to find the Python version. The second parameter determines whether the requested copy of Python is required or not. 
 
 ![Loading Reticulate](https://adam-gladstone.github.io/assets/images/startup-reticulate.PNG)
