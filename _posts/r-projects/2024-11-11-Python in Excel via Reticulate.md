@@ -3,9 +3,7 @@ title:  "Python in Excel via Reticulate"
 seo_title: "Calling a Python script from Excel using the R package Reticulate"
 seo_description: "This post describes a particular use-case for Python in Excel and how it was solved using the R package Reticulate (version 1.39.0). "
 layout: single
-excerpt: "This post describes a particular use-case for Python in Excel and how it was solved using the R package [Reticulate 1.39.0](https://cran.r-project.org/web/packages/reticulate/index.html) along with the [ExcelRAddIn](https://github.com/Adam-Gladstone/Office365AddIns).
-
-A while back I read an interesting post on LinkedIn that identified a number of criteria that might be useful when selecting stocks for a portfolio.. "
+excerpt: "This post describes a particular use-case for Python in Excel and how it was solved using the R package [Reticulate 1.39.0](https://cran.r-project.org/web/packages/reticulate/index.html) along with the [ExcelRAddIn](https://github.com/Adam-Gladstone/Office365AddIns).A while back I read an interesting post on LinkedIn that identified a number of criteria that might be useful when selecting stocks for a portfolio.. "
 excerpt_separator: "<!--more-->"
 categories: 
   - R-project 
@@ -99,8 +97,8 @@ This is where the R package Reticulate came to the rescue. It provides functiona
 #### Using Reticulate in Excel
 Using Reticulate in Excel via the ExcelRAddIn was simple and consists of the following steps.
 
-1. Load the reticulate library.
-2. Tell reticulate where to find the Python version. The second parameter determines whether the requested copy of Python is required or not. 
+A. Load the reticulate library.
+B. Tell reticulate where to find the Python version. The second parameter determines whether the requested copy of Python is required or not. 
 
 ![Loading Reticulate](https://adam-gladstone.github.io/assets/images/startup-reticulate.PNG)
 
@@ -108,13 +106,13 @@ If we are doing this routinely, it is useful to add Reticulate to the libraries 
 
 ![Reticulate environment](https://adam-gladstone.github.io/assets/images/env-reticulate.PNG)
 
-3. Load the Python script, and check it compiles ok. For this we just evaluate the following R script in Excel: `source_python("D:/Development/Projects/Python/FinancialData/equity_financials_alt.py")`
+C. Load the Python script, and check it compiles ok. For this we just evaluate the following R script in Excel: `source_python("D:/Development/Projects/Python/FinancialData/equity_financials_alt.py")`
 
-4. Create an R vector of tickers for the indicators that we want.
+D. Create an R vector of tickers for the indicators that we want.
 
 ![Create R vector](https://adam-gladstone.github.io/assets/images/tickers-vector.PNG)
 
-5. Finally call the 'get_all_indicators' function, passing it the vector of tickers. 
+E. Finally call the 'get_all_indicators' function, passing it the vector of tickers. 
 
 ![Retrieve the indicators](https://adam-gladstone.github.io/assets/images/all-indicators.PNG)
 
