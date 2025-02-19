@@ -97,6 +97,10 @@ author:
     - label: "R-bloggers"
       icon: "fab fa-fw fa-r-project"
       url: "http://www.R-bloggers.com"
+    - label: "Python-bloggers"
+      icon: "fab fa-fw fa-python"
+      url: "https://python-bloggers.com"
+
 
 footer:
   links:
@@ -109,6 +113,9 @@ footer:
     - label: "R-bloggers"
       icon: "fab fa-fw fa-r-project"
       url: "http://www.R-bloggers.com"
+    - label: "Python-bloggers"
+      icon: "fab fa-fw fa-python"
+      url: "https://python-bloggers.com"
 
 defaults:
   # _posts
