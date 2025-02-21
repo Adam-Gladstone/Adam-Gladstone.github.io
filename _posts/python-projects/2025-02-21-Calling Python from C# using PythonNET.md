@@ -15,7 +15,7 @@ tags:
 ---
 
 ### Introduction
-Recently, I've been using Python's __yfinance__ library to perform some simple portfolio analysis. Rather than using a Jupyter notebook to run the Python code and visualise the results, I thought it might be a nice idea to build a .NET desktop application using WinUI 3.0, XAML and C#. The application allows you to define a portfolio and manages the presentation of the results graphically. The underlying analysis is performed using Python. In order to call the Python code from C#, I use [Python.NET](https://github.com/pythonnet/pythonnet). The purpose of this blog post is to describe how to use __Python.NET__ to call Python functions from a C# application. The complete application is available on github (https://github.com/Adam-Gladstone/PortfolioManager). 
+Recently, I've been using Python's __yfinance__ library to perform some simple portfolio analysis. Rather than using a Jupyter notebook to run the Python code and visualise the results, I thought it might be a nice idea to build a .NET desktop application using WinUI 3.0, XAML and C#. The application allows you to define a portfolio and manages the presentation of the results graphically. The underlying analysis is performed using Python. In order to call the Python code from C#, I use [Python.NET](https://github.com/pythonnet/pythonnet). The purpose of this blog post is to describe how to use __Python.NET__ to call Python functions from a C# application. The complete [PortfolioManager application](https://github.com/Adam-Gladstone/PortfolioManager) is available on github.
 
 ![Portfolio Manager](https://adam-gladstone.github.io/assets/images/PortfolioAnalysisResults.png)
 
