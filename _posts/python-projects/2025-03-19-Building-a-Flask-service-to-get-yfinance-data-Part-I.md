@@ -31,7 +31,7 @@ So, in order to bridge the gap between Excel and Python I thought it might be a 
 
 This blog is divided into two parts. In [Part I](https://adam-gladstone.github.io/python-project/Building-a-Flask-service-to-get-yfinance-data-Part-I/), I describe the [__YFinanceService__](https://github.com/Adam-Gladstone/YFinanceService). This is a basic Flask service with APIs to perform the stock valuation calculation and more generally to obtain ticker data using __yfinance__.
 
-In [Part II](https://adam-gladstone.github.io/python-project/2025-03-19-Consuming-yfinance-data-in-Excel-Part-II/), I describe how to use the __YFinanceService__ from Excel Power Query to automate the process of performing a stock valuation calculation and to obtain a simple table of ticker data.
+In [Part II](https://adam-gladstone.github.io/python-project/Consuming-yfinance-data-in-Excel-Part-II/), I describe how to use the __YFinanceService__ from Excel Power Query to automate the process of performing a stock valuation calculation and to obtain a simple table of ticker data.
 
 There are several alternative approaches. One could try a custom Python add-in for Excel. If you have non-financial data perhaps use Excel's built-in Python support. The approach adopted here is a simple and quite generic way to have access to Python and its ecosystem. It allows you to obtain data and invoke / perform calculations.
 
@@ -221,4 +221,4 @@ http://localhost:5000/YFinanceService/TickerData?tickers=MSFT,AMZN,WAL,TSLA&fiel
 As before, the error handling is resilient rather than informative. The table will be built with empty values if there is a problem obtaining the data, if the key doesn't exist, or if the ticker symbol is unavailable and so on. This is not necessarily ideal but it simplifies the client processing.
 
 ### Wrap Up
-This blog has introduced the __YFinanceService__, a simple Flask service that defines some endpoints to allow us to perform a stock valuation calculation and more generally to obtain ticker data using the Python __yfinance__ library. In [Part II](https://adam-gladstone.github.io/python-project/2025-03-19-Consuming-yfinance-data-in-Excel-Part-II/) of the blog, I describe how to use the *raw* APIs in Excel via the Power Query Web Connector.
+This blog has introduced the __YFinanceService__, a simple Flask service that defines some endpoints to allow us to perform a stock valuation calculation and more generally to obtain ticker data using the Python __yfinance__ library. In [Part II](https://adam-gladstone.github.io/python-project/Consuming-yfinance-data-in-Excel-Part-II/) of the blog, I describe how to use the *raw* APIs in Excel via the Power Query Web Connector.

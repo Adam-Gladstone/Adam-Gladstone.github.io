@@ -19,7 +19,7 @@ tags:
 ---
 
 ### Introduction
-The [first part](https://adam-gladstone.github.io/python-project/Building-a-Flask-service-to-get-yfinance-data-Part-I/) of this two-part blog described the [YFinanceService](https://github.com/Adam-Gladstone/YFinanceService). This is a Flask service that wraps calls to the Python __yfinance__ library and which served up some of the data via the APIs (/IntrinsicValue, /TickerData and so on). [Part II](https://adam-gladstone.github.io/python-project/2025-03-19-Consuming-yfinance-data-in-Excel-Part-II/) of the blog describes how to make use of the APIs in an Excel spreadsheet, specifically using the Power Query Web Connector to retrieve the data.
+The [first part](https://adam-gladstone.github.io/python-project/Building-a-Flask-service-to-get-yfinance-data-Part-I/) of this two-part blog described the [YFinanceService](https://github.com/Adam-Gladstone/YFinanceService). This is a Flask service that wraps calls to the Python __yfinance__ library and which served up some of the data via the APIs (/IntrinsicValue, /TickerData and so on). [Part II](https://adam-gladstone.github.io/python-project/Consuming-yfinance-data-in-Excel-Part-II/) of the blog describes how to make use of the APIs in an Excel spreadsheet, specifically using the Power Query Web Connector to retrieve the data.
 
 ### Consuming the APIs from Excel
 One of the main objectives of this project was to be able to obtain the data from __yfinance__ via the __YFinanceService__ and use it in Excel. For this, we use the [Stock Valuation Spreadsheet](https://adam-gladstone.github.io/assets/images/Stock%20Valuation.xlsx).
@@ -73,7 +73,7 @@ The resulting table is processed to display on the Intrinsic Value column (which
 Overall the performance of the queries is slow. Assuming the __YFinanceService__ is already running, and the Excel spreadsheet is open. Then, pressing the refresh button on any of the queries needs to 1) construct a query string, 2) call the API via Web.Contents, and 3) process the results. The call via Web.Contents calls a Flask API which wraps Python code, and in this case calls via __yfinance__ and __yahoo_fin__. Both these use web scraping and this is what determines the slow performance.
 
 ### Wrap Up
-In [Part I](https://adam-gladstone.github.io/python-project/Building-a-Flask-service-to-get-yfinance-data-Part-I/) we described the [YFinanceService](https://github.com/Adam-Gladstone/YFinanceService) and the API calls to the Python __yfinance__ library. [Part II](https://adam-gladstone.github.io/python-project/2025-03-19-Consuming-yfinance-data-in-Excel-Part-II/) described how to make use of the APIs in an Excel spreadsheet, specifically using the Power Query Web Connector to retrieve the data.
+In [Part I](https://adam-gladstone.github.io/python-project/Building-a-Flask-service-to-get-yfinance-data-Part-I/) we described the [YFinanceService](https://github.com/Adam-Gladstone/YFinanceService) and the API calls to the Python __yfinance__ library. [Part II](https://adam-gladstone.github.io/python-project/Consuming-yfinance-data-in-Excel-Part-II/) described how to make use of the APIs in an Excel spreadsheet, specifically using the Power Query Web Connector to retrieve the data.
 
 Overall the arrangement that we have is:
 - The __YFinanceService__ API query ("What is the intrinsic value of this stock using Graham's formula?") takes its parameters and inputs from an Excel table and invokes the stock valuation function via the Power Query Web Connector.
