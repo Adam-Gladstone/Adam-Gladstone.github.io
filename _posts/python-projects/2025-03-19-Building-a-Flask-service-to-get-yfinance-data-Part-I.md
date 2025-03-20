@@ -21,15 +21,17 @@ tags:
 ### Introduction
 Recently, I've been doing some portfolio analysis and I came across an interesting video: [How to Calculate the Intrinsic Value of a Stock like Benjamin Graham](https://www.youtube.com/watch?v=8jmjxXc5H8c). Since not all the data is available in Excel, I thought it might be useful to automate the calculation using data from the (excellent) __yfinance__ Python library. The formula itself, written in Python, is quite simple. The challenge was to obtain the individual parameters and inputs and be able to call the Python function from an Excel worksheet. 
 
-It would have been nice to be able to use Excel's Python support [PY=](https://support.microsoft.com/en-us/office/get-started-with-python-in-excel-a33fbcbe-065b-41d3-82cf-23d05397f53d). But it turns out that importing __yfinance__ produces a ![module not found error](https://adam-gladstone.github.io/assets/images/Module-Not-Found-Error.png).
+It would have been nice to be able to use Excel's Python support [PY=](https://support.microsoft.com/en-us/office/get-started-with-python-in-excel-a33fbcbe-065b-41d3-82cf-23d05397f53d). But it turns out that importing __yfinance__ produces a *module not found* error.
+
+![module not found error](https://adam-gladstone.github.io/assets/images/Module-Not-Found-Error.png).
 
 According to the documentation __yfinance__ is not one of the open source libraries that the Excel Python secure distribution [supports](https://support.microsoft.com/en-us/office/open-source-libraries-and-python-in-excel-c817c897-41db-40a1-b9f3-d5ffe6d1bf3e).
 
 So, in order to bridge the gap between Excel and Python I thought it might be a good idea to write a [Flask API](https://flask.palletsprojects.com/en/stable/). This arrangement allows us access to Python's ecosystem, and provides a (relatively) simple means by which we can consume the data in Excel using the Power Query Web Connector.
 
-This blog is divided into two parts. In [Part I](https://adam-gladstone.github.io/python-projects/Building-a-Flask-service-to-get-yfinance-data-Part-I/), I describe the [__YFinanceService__](https://github.com/Adam-Gladstone/YFinanceService). This is a basic Flask service with APIs to perform the stock valuation calculation and more generally to obtain ticker data using __yfinance__.
+This blog is divided into two parts. In [Part I](https://adam-gladstone.github.io/python-project/Building-a-Flask-service-to-get-yfinance-data-Part-I/), I describe the [__YFinanceService__](https://github.com/Adam-Gladstone/YFinanceService). This is a basic Flask service with APIs to perform the stock valuation calculation and more generally to obtain ticker data using __yfinance__.
 
-In [Part II](https://adam-gladstone.github.io/python-projects/2025-03-19-Consuming-yfinance-data-in-Excel-Part-II/), I describe how to use the __YFinanceService__ from Excel Power Query to automate the process of performing a stock valuation calculation and to obtain a simple table of ticker data.
+In [Part II](https://adam-gladstone.github.io/python-project/2025-03-19-Consuming-yfinance-data-in-Excel-Part-II/), I describe how to use the __YFinanceService__ from Excel Power Query to automate the process of performing a stock valuation calculation and to obtain a simple table of ticker data.
 
 There are several alternative approaches. One could try a custom Python add-in for Excel. If you have non-financial data perhaps use Excel's built-in Python support. The approach adopted here is a simple and quite generic way to have access to Python and its ecosystem. It allows you to obtain data and invoke / perform calculations.
 
@@ -107,13 +109,17 @@ if __name__ == '__main__':
 ```
 
 #### Running the YFinanceService
-The __YFinanceService__ can be run from the command line. cd to the ```\YFinanceService``` subdirectory. At the command prompt, type ```python YFinanceService.py```. Alternatively, it can be run directly with the debugger from within VSCode.
+The __YFinanceService__ can be run from the command line. Locate the ```\YFinanceService``` subdirectory. At the command prompt, type ```python YFinanceService.py```. Alternatively, the service can be run directly with the debugger from within VSCode.
 
 You should see a message similar to the following:
 
 ![Starting the YFinanceService](https://adam-gladstone.github.io/assets/images/Running-Flask-app.png)
 
-To test the service from a browser, type in the address bar: http://localhost:5000/YFinanceService/VersionInfo, and you should see the json response packet: ```{"VersionInfo": {"flask": "3.1.0", "yfinance": "0.2.54", "pandas": "2.2.3"}}```
+To test the service from a browser, type the following in the address bar: 
+
+[http://localhost:5000/YFinanceService/VersionInfo](http://localhost:5000/YFinanceService/VersionInfo)
+
+and you should see the json response packet: ```{"VersionInfo": {"flask": "3.1.0", "yfinance": "0.2.54", "pandas": "2.2.3"}}```
 
 ### YFinanceService Endpoints
 With the service running, the API endpoints can be exercised via a browser using the examples below (assuming the service is running on port 5000).
@@ -200,7 +206,7 @@ class TickerData(Resource):
 
 ```
 
-As previously the API is divided into two parts. The first part obtains the parameters, checks that the required parameters are present and sets up the table headers. The second part iterates over the input list of ticker symbols and for each symbol requests the data items from the ```ticker.info``` structure. Each row is appended to a list of rows. Finally, the *csv* table is returned using the ```DataFrame.to_csv``` method. 
+As previously described, the API is divided into two parts. The first part obtains the parameters, checks that the required parameters are present and sets up the table headers. The second part iterates over the input list of ticker symbols and for each symbol requests the data items from the ```ticker.info``` structure. Each row is appended to a list of rows. Finally, the *csv* table is returned using the ```DataFrame.to_csv``` method. 
 
 The parameters are a comma-separated list of ticker symbols and a comma-separated list of fields (key names in the ```ticker.info``` dictionary). This provides a relatively flexible way to obtain stock financial data.
 
@@ -215,4 +221,4 @@ http://localhost:5000/YFinanceService/TickerData?tickers=MSFT,AMZN,WAL,TSLA&fiel
 As before, the error handling is resilient rather than informative. The table will be built with empty values if there is a problem obtaining the data, if the key doesn't exist, or if the ticker symbol is unavailable and so on. This is not necessarily ideal but it simplifies the client processing.
 
 ### Wrap Up
-This blog has introduced the __YFinanceService__, a simple Flask service that defines some endpoints to allow us to perform a stock valuation calculation and more generally to obtain ticker data using the Python __yfinance__ library. In [Part II](https://adam-gladstone.github.io/python-projects/2025-03-19-Consuming-yfinance-data-in-Excel-Part-II/) of the blog, I describe how to use the *raw* APIs in Excel via the Power Query Web Connector.
+This blog has introduced the __YFinanceService__, a simple Flask service that defines some endpoints to allow us to perform a stock valuation calculation and more generally to obtain ticker data using the Python __yfinance__ library. In [Part II](https://adam-gladstone.github.io/python-project/2025-03-19-Consuming-yfinance-data-in-Excel-Part-II/) of the blog, I describe how to use the *raw* APIs in Excel via the Power Query Web Connector.
