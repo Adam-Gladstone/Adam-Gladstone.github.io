@@ -1,0 +1,27 @@
+Setting up a proper Jekyll feed
+
+https://gist.github.com/roachhd/f664d2cae2da899be3f6
+
+The standard feed address for a Jekyll website, using the jekyll-feed plugin, is /feed.xml. This is automatically generated when the plugin is installed and configured. If you've customized the feed path, it will be located at the path specified in your _config.yml file. 
+
+Here's how to ensure your Jekyll website has an Atom feed:
+1. Install the jekyll-feed plugin:
+Add gem 'jekyll-feed' to your Gemfile. 
+Add plugins: [jekyll-feed] to your _config.yml file. 
+Run bundle install to install the gem. 
+
+2. Verify the feed location:
+If no custom path is specified, the feed will be at /feed.xml. 
+If you've configured a custom path (e.g., feed: path: /blog/feed.atom), the feed will be at that location. 
+
+3. Test your feed:
+After building your site (e.g., with jekyll serve), navigate to the feed's URL in your browser. 
+
+You can also validate your feed using the W3C Feed Validation service. 
+
+https://validator.w3.org/feed/
+
+https://github.com/jekyll/jekyll-feed
+
+https://www.r-bloggers.com/2019/12/creating-an-rss-feed-to-add-your-jekyll-github-pages-blog-to-r-bloggers/
+
