@@ -32,7 +32,7 @@ In the previous posts we have used 'scripts' to call R functions. So, in this ca
 
 and get back the smoothed time series. 
 
-However, as the models become more complex, and the number and types of parameters increases, this approach becomes less manageable. An alternative is to use one of the custom ```Forecast.``` functions provided by the add-in. This allows us to set up the model parameters as a block of named parameters with their corresponding values. We have already seen an example of this in [Part II](https://adam-gladstone.github.io/r-project/Part-II-Using-R-in-Excel-Linear-Regression/) where we set up a logistic regression model. In the case of ```Forecast.MA```, we give the model a descriptive name. We know from the documentation that the model takes two parameters: the order ("order of moving average smoother") and the center ("if TRUE, then the moving average is centred for even orders"). Then we just call a regular Excel worksheet function.
+However, as the models become more complex, and the number and types of parameters increases, this approach becomes less manageable. An alternative is to use one of the custom ```Forecast.``` functions provided by the add-in. This allows us to set up the model parameters as a block of named parameters with their corresponding values. We have already seen an example of this in [Part II](https://adam-gladstone.github.io/r-project/Part-II-Using-R-in-Excel-Linear-Regression/) where we set up a logistic regression model. In the case of ```Forecast.MA```, we give the model a descriptive name. We know from the documentation that the model takes two parameters: the order (*"order of moving average smoother"*) and the center (*"if TRUE, then the moving average is centred for even orders"*). Then we just call a regular Excel worksheet function.
 
 ![Moving Average Model](https://adam-gladstone.github.io/assets/images/MovingAverageModel.png)
 
@@ -53,7 +53,7 @@ The add-in provides wrappers around a number of the functions in the [forecast p
 - Forecast.Croston - Forecasts and other information for Croston’s forecasts
 
 ### Simple Exponential Smoothing
-In this example, we create a simple exponential smoothing model. As before we set up the model parameters following the forecast package [documentation](https://cran.r-project.org/web/packages/forecast/forecast.pdf). Fortunately, most of the values are defaulted so we only provide inputs for the following:
+In this example, we create a simple exponential smoothing model. As before we set up the model parameters following the forecast package ```ses``` [documentation](https://cran.r-project.org/web/packages/forecast/forecast.pdf). Fortunately, most of the values are defaulted so we only provide inputs for the following:
 - *alpha* - the value of the smoothing parameter for the level. If NULL, it will be estimated.
 - *h* - the number of periods for forecasting.
 
@@ -75,7 +75,7 @@ The HW worksheet illustrates working with the Holt-Winters model. In this case, 
 ### ARIMA
 The final example concerns the ARIMA model. The setup of the model is somewhat more complicated than in previous cases. Specifically, the ```order``` and the ```seasonal``` parameters.
 
-From the documentation we know that the ```order``` parameter is a specification of the non-seasonal part of the ARIMA model: the three components (p, d, q) are the AR order, the degree of differencing, and the MA order. To handle this specification, we input the components using the vector notation: c(0, 1, 1).
+From the documentation we know that the ```order``` parameter is a specification of the non-seasonal part of the ARIMA model: the three components (p, d, q) are the AR order, the degree of differencing, and the MA order. To handle this specification, we input the components using the vector notation: ```c(0, 1, 1)```.
 
 For the ```seasonal``` parameter, the documentation says: *"A specification of the seasonal part of the ARIMA model, plus the period (which defaults to frequency(y)). This should be a list with components order and period, but a specification of just a numeric vector of length 3 will be turned into a suitable list with the specification as the order."*
 

@@ -47,16 +47,16 @@ This function is part of the add-in and simplifies the creation of dataframes. T
 
 This copies the data into the R environment. There are a number of alternatives to this approach. We could have loaded the csv file directly into R using:
 
-```galapagos <- read.csv("D:\Development\Projects\Web\Adam-Gladstone.github.io\assets\images\GalapagosData.csv")```
+```galapagos <- read.csv("D:\Development\...\GalapagosData.csv")```
 
 By loading the data into Excel and then copying it to R, we can leverage the Excel import using Power Query, so we automatically get grouping, filtering etc, and can immediately create PivotTables. The downside is that we need to make a copy into R, and this means ensuring the data types are 'viable'. This is particularly important with dates.
 
 #### Obtaining Statistics
-Now that we have the data frame in R (and in Excel), we can obtain some descriptive statistics. If we were doing this exclusively in Excel, we might use individual formulas (```=COUNT()```, ```=AVERAGE()```, ```=STDEV.S()``` and so on). Using R, we can accomplish the same thing
+Now that we have the data frame in R (and in Excel), we can obtain some descriptive statistics. If we were doing this exclusively in Excel, we might use individual formulas (```=COUNT()```, ```=AVERAGE()```, ```=STDEV.S()``` and so on). Using R, we can accomplish the same thing.
 
 ![Basic Statistics](https://adam-gladstone.github.io/assets/images/BasicStatistics.png)
 
-and this returns the mean and standard deviation as expected. 
+As expected, this returns the mean and standard deviation. 
 
 We can improve on this using some additional R functions: ```sapply``` together with ```fivenum``` (__fivenum__ returns Tukey's five number summary (minimum, lower-hinge, median, upper-hinge, maximum) for the input data).
 
@@ -68,9 +68,7 @@ An alternative to the five-number summary is to use the built-in ```summary(...)
 
 ![Summary Function](https://adam-gladstone.github.io/assets/images/SummaryFunction.png)
 
-Basically, we get the column labels from the galapagos dataset using: ```names(galapagos)```, and we get the labels for the summary using: ```names(summary(galapagos$Species))```.
-
-Then for each column of the data we are interested in, we request the summary. For example: ```summary(galapagos$Elevation)```.
+Basically, we get the column labels from the galapagos dataset using: ```names(galapagos)```, and we get the labels for the summary using: ```names(summary(galapagos$Species))```. Then for each column of the data we are interested in, we request the summary. For example: ```summary(galapagos$Elevation)```.
 
 Now that we are massaging the results, we might even consider using a custom function. We can, for example, define a function that returns a dataframe consisting of a label and the corresponding statistic:
 
@@ -86,7 +84,7 @@ Evaluating the function with the script:
 
 ```custom_summary(galapagos$Area)```
 
-outputs a small table:
+outputs a small table, as follows:
 
 ![Custom Function](https://adam-gladstone.github.io/assets/images/CustomFunction.png)
 
