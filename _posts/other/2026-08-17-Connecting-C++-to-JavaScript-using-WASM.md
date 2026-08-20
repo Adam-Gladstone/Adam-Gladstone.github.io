@@ -46,7 +46,9 @@ There were two main reasons for using this library. Firstly, I wanted an example
 Secondly, most of the information about WebAssembly focuses specifically on the performance aspect rationale for using a C++ library in a web application hosted in a web browser. However, I think there is a more general use case applicable to any C++ code. One of the main attractions of WebAssembly is that it allows us to leverage the vast library of existing open-source C and C++ code in web applications.
 
 ### Project
-*StatsLibScript* consists of a single ![project](https://adam-gladstone.github.io/assets/images/StatsLibScript-Project.png).
+*StatsLibScript* consists of a single project.
+
+![project](https://adam-gladstone.github.io/assets/images/StatsLibScript-Project.png).
 
 The ```StatsLibScript``` folder is divided into ```\lib``` and ```\web``` sub-folders. The ```\lib``` folder contains the sources and the ```\web``` folder contains the web application. 
 
